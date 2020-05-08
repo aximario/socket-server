@@ -2,8 +2,8 @@ const http = require('http')
 const Koa = require('koa')
 
 const app = new Koa()
-const server = http.createServer(app.callback()).listen(3000, () => {
-  console.log('[Server] running on port 3000')
+const server = http.createServer(app.callback()).listen(8088, () => {
+  console.log('[Server] running on port 8088')
 })
 
 const io = require('socket.io')(server)

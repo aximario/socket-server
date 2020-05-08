@@ -6,7 +6,8 @@
   "author": "aximario <aximario@qq.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/app.js"
+    "start": "node ./src/app.js",
+    "prod": "pm2 start ./src/app.js --name=socket-demo"
   },
   "dependencies": {
     "koa": "^2.11.0",
